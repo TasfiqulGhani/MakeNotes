@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.tasfiqul.ghani"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources true
+            debuggable false
+            zipAlignEnabled true
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.afollestad.material-dialogs:core:0.9.0.1'
+    compile 'jp.wasabeef:richeditor-android:1.2.0'
+    compile 'com.google.android.gms:play-services-ads:10.2.0'
+}

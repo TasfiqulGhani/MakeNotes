@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:srcCompat="?attr/emptyIcon"
+            android:scaleType="center"
+            tools:ignore="MissingPrefix"
+            android:contentDescription="@string/empty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/no_notes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/main_text"
+            android:textSize="@dimen/smaller_text"
+            android:text="@string/no_notes_desc"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/protector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="top|start"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@color/protector" />
+
+    <com.tasfiqul.ghani.widget.Fab
+        android:id="@+id/fab_type"
+        android:layout_width="@dimen/fab_mini"
+        android:layout_height="@dimen/fab_mini"
+        android:visibility="gone"
+        android:elevation="4dp"
+        android:scaleType="center"
+        app:layout_anchor="@+id/recyclerView"
+        app:layout_anchorGravity="bottom|end"
+        android:clickable="true"
+        android:background="?attr/fabColor"
+        app:srcCompat="@drawable/fab_type"
+        android:contentDescription="@string/new_note"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="140dp"
+        app:layout_behavior="com.tasfiqul.ghani.inner.FabBehavior"
+        tools:ignore="MissingPrefix,UnusedAttribute"/>
+
+    <com.tasfiqul.ghani.widget.Fab
+        android:id="@+id/fab_drawing"
+        android:layout_width="@dimen/fab_mini"
+        android:layout_height="@dimen/fab_mini"
+        android:elevation="4dp"
+        android:scaleType="center"
+        app:layout_anchor="@+id/recyclerView"
+        app:layout_anchorGravity="bottom|end"
+        android:clickable="true"
+        android:background="?attr/fabColor"
+        android:visibility="gone"
+        app:srcCompat="@drawable/fab_drawing"
+        android:contentDescription="@string/new_note"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="88dp"
+        app:layout_behavior="com.tasfiqul.ghani.inner.FabBehavior"
+        tools:ignore="MissingPrefix,UnusedAttribute"/>
+
+    <com.tasfiqul.ghani.widget.Fab
+        android:id="@+id/fab"
+        android:layout_width="@dimen/fab"
+        android:layout_height="@dimen/fab"
+        android:elevation="4dp"
+        android:scaleType="center"
+        app:layout_anchor="@+id/recyclerView"
+        app:layout_anchorGravity="bottom|end"
+        android:clickable="true"
+        android:background="?attr/fabColor"
+        app:srcCompat="@drawable/fab_add"
+        android:contentDescription="@string/new_note"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_behavior="com.tasfiqul.ghani.inner.FabBehavior"
+        tools:ignore="MissingPrefix,UnusedAttribute"/>
+
+</android.support.design.widget.CoordinatorLayout>
