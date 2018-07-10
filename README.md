@@ -13,5 +13,4 @@ Features include:
 
 Screenshots
 
-
-![Alt text](/screenshot1.png?raw=true "Screenshot")
+![ScreenShot](https://raw.github.com/{tasfiqulghani}/{MakeNotes/screenshots1)
