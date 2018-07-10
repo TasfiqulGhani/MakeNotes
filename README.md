@@ -14,4 +14,4 @@ Features include:
 Screenshots
 
 
-![Alt text](/relative/path/to/screenshot1.png?raw=true "Screenshot")
+![Alt text](/screenshot1.png?raw=true "Screenshot")
