@@ -13,4 +13,4 @@ Features include:
 
 Screenshots
 
-![ScreenShot](https://raw.github.com/{tasfiqulghani}/{MakeNotes/screenshots1)
+[![screenshot1.png](https://s33.postimg.cc/xospkg5of/screenshot1.png)](https://postimg.cc/image/yebhwt67v/)
